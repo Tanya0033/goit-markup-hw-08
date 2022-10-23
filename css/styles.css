@@ -6,8 +6,11 @@
 	--alternative-background-color: #f5f4fa;
 	--background-color-footer: #2f303a;
 	--background-color-button-portfolio: #f5f4fa;
+	--background-color-hover-focus: #188ce8;
 }
 body {
+	font-size: 14px;
+	letter-spacing: 0.03em;
 	font-family: Roboto, Verdana, sans-serif;
 	color: var(--primary-text-color);
 	background-color: var(--primary-white-color);
@@ -31,7 +34,7 @@ body {
 .nav-link {
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 1, 33;
+	line-height: 1.33;
 	letter-spacing: 0.02em;
 	color: var(--title-text-color);
 	text-decoration: none;
@@ -50,7 +53,7 @@ body {
 .header-tel {
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 1, 33;
+	line-height: 1.33;
 	letter-spacing: 0.02em;
 	text-decoration: none;
 	color: var(--primary-text-color);
@@ -68,7 +71,7 @@ body {
 .hero .title {
 	font-weight: 900;
 	font-size: 44px;
-	line-height: 1, 36;
+	line-height: 1.36;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
@@ -78,7 +81,7 @@ body {
 	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
-	line-height: 1, 88;
+	line-height: 1.88;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -104,15 +107,12 @@ body {
 }
 .item .header-item {
 	font-weight: 700;
-	font-size: 14px;
-	line-height: 1, 14;
-	letter-spacing: 0.03em;
+	line-height: 1 14;
 	text-transform: uppercase;
 	color: var(--title-text-color);
 }
 .item .text {
-	line-height: 1, 71;
-	letter-spacing: 0.03em;
+	line-height: 1.71;
 }
 /*------------------------------------WORK-----------------------*/
 .work .list {
@@ -126,9 +126,8 @@ body {
 .work .header {
 	font-weight: 700;
 	font-size: 36px;
-	line-height: 1, 17;
+	line-height: 1.17;
 	text-align: center;
-	letter-spacing: 0.03em;
 	color: var(--title-text-color);
 }
 .team .list {
@@ -140,15 +139,13 @@ body {
 .team .name {
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1, 19;
+	line-height: 1.19;
 	text-align: center;
-	letter-spacing: 0.03em;
 	color: var(--title-text-color);
 }
 .list-item .proffesion {
 	font-size: 16px;
-	line-height: 1, 19;
-	letter-spacing: 0.03em;
+	line-height: 1.19;
 }
 .list-item .proffesion,
 .list-item .photo,
@@ -163,7 +160,7 @@ body {
 	font-family: "Raleway";
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 1, 19;
+	line-height: 1.19;
 	letter-spacing: 0.03em;
 	color: var(--primary-white-color);
 }
@@ -174,18 +171,18 @@ body {
 	font-family: Roboto, sans-serif;
 	font-style: normal;
 	font-size: 14px;
-	line-height: 1, 71;
+	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--primary-white-color);
 	text-decoration: none;
 }
 .address-list .mail,
 .address-list .tel {
-	font-family: "Roboto";
+	font-family: Roboto, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 1, 71;
+	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
 	text-decoration: none;
@@ -208,12 +205,23 @@ body {
 	font-family: Roboto, sans-serif;
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1, 63;
+	line-height: 1.63;
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--title-text-color);
 	background-color: var(--background-color-button-portfolio);
 }
+.filter .button:hover,
+.filter .button:focus,
+.primary-button:hover,
+.primary-button:focus {
+	color: var(--primary-white-color);
+	background-color: var(--background-color-hover-focus);
+}
+.filter .button {
+	cursor: pointer;
+}
+
 .portfolio .title {
 	font-weight: 700;
 	font-size: 18px;
@@ -223,5 +231,5 @@ body {
 }
 .portfolio .text {
 	font-size: 16px;
-	line-height: 1, 86;
+	line-height: 1.86;
 }

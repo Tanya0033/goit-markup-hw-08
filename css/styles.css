@@ -46,17 +46,16 @@ img {
 }
 /*-----------------------------HEADER-----------------*/
 .container {
-	width: 1230px;
+	align-items: center;
+	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-right: auto;
 	margin-left: auto;
-	outline: 2px solid tomato;
 }
 .header-container {
 	display: flex;
 	align-items: center;
-	margin-left: auto;
 	margin-right: auto;
 }
 .nav-link {
@@ -66,7 +65,7 @@ img {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 1, 19;
+	line-height: 1.19;
 	letter-spacing: 0.03em;
 	text-decoration: none;
 	color: var(--accent-color);
@@ -130,11 +129,22 @@ img {
 }
 .section {
 	padding: 94px 0;
+	width: 100%;
 }
 /*----------------------------------------HERO-----------------------------------*/
 .hero {
 	background-color: var(--background-color-footer);
 	text-align: center;
+	padding-bottom: 210px;
+	padding-top: 200px;
+	align-items: center;
+}
+.hero.section .container {
+	align-items: center;
+	justify-content: center;
+}
+.container.button {
+	padding-left: 492px;
 }
 .hero .title {
 	font-weight: 900;
@@ -143,10 +153,10 @@ img {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--primary-white-color);
-	margin-bottom: 30px;
 	width: 696px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 30px;
 }
 .hero .primary-button {
 	font-family: inherit;
@@ -154,7 +164,6 @@ img {
 	font-size: 16px;
 	line-height: 1.88;
 	display: flex;
-	align-items: center;
 	letter-spacing: 0.06em;
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
@@ -164,7 +173,6 @@ img {
 	padding: 8px 30px;
 	min-width: 216px;
 	min-height: 50px;
-	margin: auto;
 }
 /*---------------------------------------ADVANTAGES-----------------*/
 .visually-hidden {
@@ -205,6 +213,7 @@ img {
 .work .header {
 	margin-bottom: 50px;
 	text-align: center;
+	padding-left: 400px;
 }
 .work-images {
 	display: flex;
@@ -216,6 +225,7 @@ img {
 }
 .team .header {
 	margin-bottom: 50px;
+	padding-left: 453px;
 }
 .team .header,
 .work .header {
@@ -264,6 +274,10 @@ img {
 	background-color: var(--background-color-footer);
 	padding: 60px 0;
 }
+.container.logo {
+	padding-left: 0px;
+	margin-bottom: 20px;
+}
 .logo-white {
 	font-family: "Raleway";
 	font-weight: 700;
@@ -280,7 +294,6 @@ img {
 	letter-spacing: 0.03em;
 	text-decoration: none;
 	color: var(--accent-color);
-	margin-bottom: 20px;
 }
 .address-list {
 	list-style: none;
@@ -342,7 +355,7 @@ img {
 .filter {
 	display: flex;
 	margin-right: auto;
-	margin-left: auto;
+	margin-left: 235px;
 	margin-bottom: 34px;
 	gap: 8px;
 }

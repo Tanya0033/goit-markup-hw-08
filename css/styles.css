@@ -46,17 +46,18 @@ img {
 }
 /*-----------------------------HEADER-----------------*/
 .container {
-	align-items: center;
 	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-right: auto;
 	margin-left: auto;
 }
+.header-container.container {
+	border-bottom: 1px solid #ececec;
+}
 .header-container {
 	display: flex;
 	align-items: center;
-	margin-right: auto;
 }
 .nav-link {
 	padding: 32px 0;
@@ -85,9 +86,10 @@ img {
 .header {
 	display: flex;
 	margin-left: auto;
+	align-items: baseline;
 }
+
 .header-mail {
-	margin-right: 50px;
 	padding: 32px 0;
 }
 .header-tel {
@@ -110,10 +112,18 @@ img {
 	color: var(--accent-color);
 }
 .header {
+	display: flex;
 	list-style-type: none;
 }
 .header-mail,
 .header-tel {
+	display: flex;
+}
+.header-tel {
+	margin-left: 50px;
+}
+.header-mail-link,
+.header-tel-link {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.33;
@@ -121,25 +131,23 @@ img {
 	text-decoration: none;
 	color: var(--primary-text-color);
 }
-.header-mail:focus,
-.header-mail:hover,
-.header-tel:focus,
-.header-tel:hover {
+.header-mail-link:focus,
+.header-mail-link:hover,
+.header-tel-link:focus,
+.header-tel-link:hover {
 	color: var(--accent-color);
 }
 .section {
 	padding: 94px 0;
-	width: 100%;
 }
 /*----------------------------------------HERO-----------------------------------*/
 .hero {
 	background-color: var(--background-color-footer);
 	text-align: center;
-	padding-bottom: 210px;
+	padding-bottom: 200px;
 	padding-top: 200px;
-	align-items: center;
 }
-.hero.section .container {
+.hero .container {
 	align-items: center;
 	justify-content: center;
 }
@@ -163,16 +171,15 @@ img {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
-	display: flex;
 	letter-spacing: 0.06em;
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
 	cursor: pointer;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
-	padding: 8px 30px;
+	padding: 10px 32px;
 	min-width: 216px;
-	min-height: 50px;
+	border: none;
 }
 /*---------------------------------------ADVANTAGES-----------------*/
 .visually-hidden {
@@ -207,13 +214,14 @@ img {
 	width: 270px;
 }
 /*------------------------------------WORK-----------------------*/
+.work.section {
+	padding-top: 0;
+}
 .work .list {
 	list-style: none;
 }
-.work .header {
+.work .title {
 	margin-bottom: 50px;
-	text-align: center;
-	padding-left: 400px;
 }
 .work-images {
 	display: flex;
@@ -223,12 +231,11 @@ img {
 .team {
 	background-color: var(--alternative-background-color);
 }
-.team .header {
+.team .title {
 	margin-bottom: 50px;
-	padding-left: 453px;
 }
-.team .header,
-.work .header {
+.team .title,
+.work .title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -245,10 +252,11 @@ img {
 .list-team .list-item {
 	background-color: var(--primary-white-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-	border-radius: 0px 0px 4px 4px;
 }
-.list-item .photo {
-	margin-bottom: 30px;
+
+.text-under-photo {
+	padding: 30px 0;
+	border-radius: 0px 0px 4px 4px;
 }
 .team .name {
 	font-weight: 500;
@@ -257,12 +265,10 @@ img {
 	text-align: center;
 	color: var(--title-text-color);
 	margin-bottom: 10px;
-	margin-bottom: 10px;
 }
 .list-item .proffesion {
 	font-size: 16px;
 	line-height: 1.19;
-	padding-bottom: 30px;
 }
 .list-item .proffesion,
 .list-item .photo,
@@ -273,10 +279,6 @@ img {
 .footer {
 	background-color: var(--background-color-footer);
 	padding: 60px 0;
-}
-.container.logo {
-	padding-left: 0px;
-	margin-bottom: 20px;
 }
 .logo-white {
 	font-family: "Raleway";
@@ -297,6 +299,7 @@ img {
 }
 .address-list {
 	list-style: none;
+	margin-top: 20px;
 }
 .address-list .location {
 	font-family: Roboto, sans-serif;
@@ -306,6 +309,9 @@ img {
 	letter-spacing: 0.03em;
 	color: var(--primary-white-color);
 	text-decoration: none;
+	margin-bottom: 9px;
+}
+.address-list .mail {
 	margin-bottom: 9px;
 }
 .address-list .mail,
@@ -336,6 +342,7 @@ img {
 .portfolio {
 	list-style: none;
 }
+
 /* -------------------FILTER------------------- */
 .filter .button {
 	font-family: Roboto, sans-serif;
@@ -347,16 +354,14 @@ img {
 	color: var(--title-text-color);
 	background-color: var(--background-color-button-portfolio);
 	border-radius: 4px;
-	padding: 4px 20px;
-	min-width: 125px;
-	min-height: 38px;
+	border: none;
+	padding: 6px 22px;
 	border: var(--background-color-button-portfolio);
 }
 .filter {
 	display: flex;
-	margin-right: auto;
-	margin-left: 235px;
-	margin-bottom: 34px;
+	justify-content: center;
+	margin-bottom: 50px;
 	gap: 8px;
 }
 
@@ -375,13 +380,8 @@ img {
 	display: flex;
 	gap: 30px;
 	flex-wrap: wrap;
-	width: 1170px;
-	margin-left: auto;
-	margin-right: auto;
 }
-.portfolio li {
-	margin-bottom: 30px;
-}
+
 .portfolio-title {
 	font-weight: 700;
 	font-size: 18px;
@@ -389,18 +389,15 @@ img {
 	letter-spacing: 0.06em;
 	color: var(--title-text-color);
 	margin-bottom: 4px;
-	padding-left: 24px;
 }
 .portfolio-text {
 	font-size: 16px;
 	line-height: 1.86;
-	padding-left: 24px;
-	padding-bottom: 20px;
 }
 .portfolio-item:nth-last-child(-n + 3) {
 	margin-bottom: 0;
 }
 .border {
-	padding-top: 20px;
+	padding: 20px 24px;
 	border: 1px solid #eeeeee;
 }

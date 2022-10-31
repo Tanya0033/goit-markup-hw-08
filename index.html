@@ -36,20 +36,20 @@
 				</nav>
 				<ul class="header">
 					<li class="header-mail">
-						<a href="mailto:info@devstudio.com" target="_blank" class="header-mail">info@devstudio.com</a></li
+						<a href="mailto:info@devstudio.com" target="_blank" class="header-mail-link">info@devstudio.com</a></li
 					>
 					<li class="header-tel"
-						><a href="tel:+380961111111" target="_blank" class="header-tel">+38 096 111 11 11</a></li
+						><a href="tel:+380961111111" target="_blank" class="header-tel-link">+38 096 111 11 11</a></li
 					>
 				</ul>
 			</div>
 		</header>
 
 		<main>
-			<section class="hero section">
+			<section class="hero">
 				<div class="container">
 					<h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-					<div class="container button"><button type="button" class="primary-button">Замовити послугу</button></div>
+					<button type="button" class="primary-button">Замовити послугу</button>
 				</div>
 			</section>
 
@@ -82,7 +82,7 @@
 
 			<section class="work section">
 				<div class="container">
-					<h2 class="header">Чим ми займаємося</h2>
+					<h2 class="title">Чим ми займаємося</h2>
 					<ul class="list work-images">
 						<li>
 							<img src="./images/img1.jpg" alt="Програмне забезпечення" width="370" height="294" />
@@ -101,30 +101,34 @@
 
 			<section class="team section">
 				<div class="container">
-					<h2 class="header">Наша команда</h2>
+					<h2 class="title">Наша команда</h2>
 					<ul class="list-team">
 						<li class="list-item">
 							<img class="photo" src="./images/product_designer.jpg" alt="Дизайнер" width="270" height="260" />
-							<h3 class="name">Ігор Дем'яненко</h3>
-							<p lang="en" class="proffesion">Product Designer</p>
+							<div class="text-under-photo"
+								><h3 class="name">Ігор Дем'яненко</h3> <p lang="en" class="proffesion">Product Designer</p></div
+							>
 						</li>
 
 						<li class="list-item">
 							<img class="photo" src="./images/frontend(2).jpg" alt="Фронтенд-розробник" width="270" height="260" />
-							<h3 class="name">Ольга Рєпіна</h3>
-							<p lang="en" class="proffesion">Frontend Developer</p>
+							<div class="text-under-photo"
+								><h3 class="name">Ольга Рєпіна</h3> <p lang="en" class="proffesion">Frontend Developer</p></div
+							>
 						</li>
 
 						<li class="list-item">
 							<img class="photo" src="./images/marketing(3).jpg" alt="Макетинг" width="270" height="260" />
-							<h3 class="name">Микола Тарасов</h3>
-							<p lang="en" class="proffesion">Marketing</p>
+							<div class="text-under-photo"
+								><h3 class="name">Микола Тарасов</h3> <p lang="en" class="proffesion">Marketing</p></div
+							>
 						</li>
 
 						<li class="list-item">
 							<img class="photo" src="./images/ui_designer(4).jpg" alt="Дизайнер" width="270" height="260" />
-							<h3 class="name">Михайло Єрмаков</h3>
-							<p lang="en" class="proffesion">UI Designer</p>
+							<div class="text-under-photo"
+								><h3 class="name">Михайло Єрмаков</h3> <p lang="en" class="proffesion">UI Designer</p></div
+							>
 						</li>
 					</ul>
 				</div>
@@ -133,9 +137,8 @@
 
 		<footer class="footer">
 			<div class="container">
-				<div class="container logo"
-					><a class="logo-footer" href="./index.html" lang="en">Web<span class="logo-white">Studio</span> </a></div
-				>
+				<a class="logo-footer" href="./index.html" lang="en">Web<span class="logo-white">Studio</span> </a>
+
 				<address>
 					<ul class="address-list">
 						<li>

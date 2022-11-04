@@ -52,7 +52,7 @@ img {
 	margin-right: auto;
 	margin-left: auto;
 }
-.header-container.container {
+header {
 	border-bottom: 1px solid #ececec;
 }
 .header-container {
@@ -297,9 +297,14 @@ img {
 	text-decoration: none;
 	color: var(--accent-color);
 }
+address {
+	margin-top: 20px;
+}
 .address-list {
 	list-style: none;
-	margin-top: 20px;
+}
+.address-list-item:not(:last-child) {
+	margin-bottom: 9px;
 }
 .address-list .location {
 	font-family: Roboto, sans-serif;
@@ -309,10 +314,6 @@ img {
 	letter-spacing: 0.03em;
 	color: var(--primary-white-color);
 	text-decoration: none;
-	margin-bottom: 9px;
-}
-.address-list .mail {
-	margin-bottom: 9px;
 }
 .address-list .mail,
 .address-list .tel {
@@ -356,7 +357,6 @@ img {
 	border-radius: 4px;
 	border: none;
 	padding: 6px 22px;
-	border: var(--background-color-button-portfolio);
 }
 .filter {
 	display: flex;
@@ -400,4 +400,5 @@ img {
 .border {
 	padding: 20px 24px;
 	border: 1px solid #eeeeee;
+	border-top: none;
 }

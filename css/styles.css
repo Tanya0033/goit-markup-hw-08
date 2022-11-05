@@ -104,6 +104,7 @@ header {
 	color: var(--title-text-color);
 	text-decoration: none;
 }
+
 .nav-link:hover,
 .nav-link:focus {
 	color: var(--accent-color);
@@ -146,6 +147,17 @@ header {
 	text-align: center;
 	padding-bottom: 200px;
 	padding-top: 200px;
+}
+.hero.overlay {
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-position: center;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url("../images/hero_background.jpg");
 }
 .hero .container {
 	align-items: center;

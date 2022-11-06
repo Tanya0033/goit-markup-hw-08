@@ -104,7 +104,9 @@ header {
 	color: var(--title-text-color);
 	text-decoration: none;
 }
-
+.nav-icon {
+	background-color: tomato;
+}
 .nav-link:hover,
 .nav-link:focus {
 	color: var(--accent-color);
@@ -116,6 +118,17 @@ header {
 	display: flex;
 	list-style-type: none;
 }
+.header-icon,
+.header-smartphone {
+	fill: currentColor;
+}
+.header-mail-link,
+.header-tel-link {
+	display: flex;
+	text-align: center;
+	gap: 10px;
+}
+
 .header-mail,
 .header-tel {
 	display: flex;
@@ -211,7 +224,14 @@ header {
 	gap: 30px;
 }
 .advantages .item {
+	display: block;
 	list-style-type: none;
+}
+.icon-container {
+	padding: 25px 100px;
+	margin-bottom: 30px;
+	background-color: #f5f4fa;
+	border-radius: 4px;
 }
 .item .header-item {
 	font-size: 14px;
@@ -243,11 +263,17 @@ header {
 .team {
 	background-color: var(--alternative-background-color);
 }
-.team .title {
+.list-team .list-item {
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	background-color: var(--primary-white-color);
+}
+.team .title,
+.clients .title {
 	margin-bottom: 50px;
 }
 .team .title,
-.work .title {
+.work .title,
+.clients .title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -260,10 +286,6 @@ header {
 }
 .team .list {
 	list-style: none;
-}
-.list-team .list-item {
-	background-color: var(--primary-white-color);
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .text-under-photo {
@@ -287,6 +309,59 @@ header {
 .list-item .name {
 	text-align: center;
 }
+.list-item .proffesion {
+	margin-bottom: 16px;
+}
+.socials-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.socials-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
+	background-color: var(--primary-white-color);
+}
+.socials-logo {
+	fill: var(--primary-text-color);
+}
+.socials-link:hover,
+.socials-link:focus {
+	background-color: var(--accent-color);
+}
+.socials-link:hover .socials-logo,
+.socials-link:focus .socials-logo {
+	fill: var(--primary-white-color);
+}
+/*---------------------------------------CLIENTS----------------------*/
+.clients .list {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+}
+.logo-client {
+	fill: #afb1b8;
+}
+.logo-link {
+	display: block;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	padding: 16px 32px;
+}
+.logo-link:focus .logo-client,
+.logo-link:hover .logo-client {
+	fill: var(--accent-color);
+}
+.logo-link:focus,
+.logo-link:hover {
+	border-color: var(--accent-color);
+}
+
 /*--------------------------------------------FOOTER--------------------------*/
 .footer {
 	background-color: var(--background-color-footer);
@@ -308,9 +383,6 @@ header {
 	letter-spacing: 0.03em;
 	text-decoration: none;
 	color: var(--accent-color);
-}
-address {
-	margin-top: 20px;
 }
 .address-list {
 	list-style: none;
@@ -350,6 +422,55 @@ address {
 .address-list .mail {
 	margin-bottom: 9px;
 }
+.join-icon {
+	display: flex;
+	margin-left: 78px;
+}
+.footer-first-part {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 20px;
+}
+.join-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	color: var(--primary-white-color);
+	margin-left: 156px;
+	text-align: center;
+	justify-self: flex-end;
+}
+.footer-second-part {
+	display: flex;
+	align-items: flex-start;
+}
+.socials-list-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.socials-link-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
+	background-color: #ffffff1a;
+}
+.socials-logo-footer {
+	fill: var(--primary-white-color);
+}
+.socials-link-footer:hover,
+.socials-link-footer:focus {
+	background-color: var(--accent-color);
+}
+.socials-link-footer:hover .socials-logo-footer,
+.socials-link-footer:focus .socials-logo-footer {
+	fill: var(--primary-white-color);
+}
+
 /*---------------------------------------PORTFOLIO-----MAIN--------------------*/
 .filter,
 .portfolio {
@@ -387,13 +508,19 @@ address {
 .filter .button {
 	cursor: pointer;
 }
+.filter .button:hover,
+.filter .button:focus {
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 /* -------------------PORTFOLIO ----------------*/
 .portfolio {
 	display: flex;
 	gap: 30px;
 	flex-wrap: wrap;
 }
-
+.portfolio .portfolio-item:hover {
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 .portfolio-title {
 	font-weight: 700;
 	font-size: 18px;

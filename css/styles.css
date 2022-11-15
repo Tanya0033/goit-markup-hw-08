@@ -227,6 +227,7 @@ header {
 	padding: 10px 32px;
 	min-width: 216px;
 	border: none;
+	transition: color 250ms var(--timing-hover-focus);
 }
 /*---------------------------------------ADVANTAGES-----------------*/
 .visually-hidden {
@@ -379,6 +380,7 @@ header {
 .socials-link:focus {
 	background-color: var(--accent-color);
 	color: var(--primary-white-color);
+	transition: color 250ms var(--timing-hover-focus);
 }
 /*---------------------------------------CLIENTS----------------------*/
 .clients .list {
@@ -403,6 +405,7 @@ header {
 .logo-link:hover {
 	border-color: var(--accent-color);
 	color: var(--accent-color);
+	transition: color 250ms var(--timing-hover-focus);
 }
 
 /*--------------------------------------------FOOTER--------------------------*/
@@ -471,6 +474,7 @@ address {
 .address-list .tel:hover,
 .address-list .tel:focus {
 	color: var(--accent-color);
+	transition: color 250ms var(--timing-hover-focus);
 }
 .address-list .mail {
 	margin-bottom: 9px;
@@ -504,6 +508,7 @@ address {
 .socials-link-footer:focus {
 	background-color: var(--accent-color);
 	color: var(--primary-white-color);
+	transition: color 250ms var(--timing-hover-focus);
 }
 /*---------------------------------------PORTFOLIO-----MAIN--------------------*/
 .filter,
@@ -541,6 +546,7 @@ address {
 .primary-button:focus {
 	color: var(--primary-white-color);
 	background-color: var(--background-color-hover-focus);
+	transition: color 250ms var(--timing-hover-focus);
 }
 .filter .button {
 	cursor: pointer;
@@ -548,6 +554,7 @@ address {
 .filter .button:hover,
 .filter .button:focus {
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	transition: color 250ms var(--timing-hover-focus);
 }
 /* -------------------PORTFOLIO ----------------*/
 .portfolio {
@@ -561,6 +568,7 @@ address {
 .portfolio-link:hover,
 .portfolio-link:focus {
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	transition: color 250ms var(--timing-hover-focus);
 }
 .portfolio-link:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay {
@@ -569,6 +577,7 @@ address {
 }
 .portfolio .portfolio-item:hover {
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	transition: color 250ms var(--timing-hover-focus);
 }
 .portfolio-title {
 	font-weight: 700;
@@ -581,6 +590,7 @@ address {
 .portfolio-thumb {
 	position: relative;
 	overflow: hidden;
+	transition: color 250ms var(--timing-hover-focus);
 }
 
 .portfolio-overlay {
@@ -623,6 +633,7 @@ address {
 	height: 100%;
 	background-color: var(--backdrop-color);
 	z-index: 100;
+	transition: opacity 250ms var(--timing-hover-focus);
 }
 .backdrop.is-hidden {
 	opacity: 0;
@@ -663,4 +674,5 @@ address {
 .backdrop.is-hidden.modal {
 	opacity: 0;
 	transform: translateX(-50%) translateY(-50%);
+	transition: opacity 250ms var(--timing-hover-focus);
 }

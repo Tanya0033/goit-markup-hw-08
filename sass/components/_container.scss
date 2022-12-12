@@ -1,0 +1,25 @@
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.icon-container {
+	padding: 25px 100px;
+	margin-bottom: 30px;
+	background-color: #f5f4fa;
+	border-radius: 4px;
+}
+.container.summary {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+.second-container {
+	margin-left: 70px;
+}
+.third-container {
+	margin-left: auto;
+}

@@ -1,0 +1,52 @@
+// work-section
+.socials-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.socials-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
+	background-color: var(--primary-white-color);
+	color: var(--main-icon-color);
+	transition: color 250ms var(--timing-hover-focus), background-color 250ms var(--timing-hover-focus);
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color);
+		color: var(--primary-white-color);
+	}
+}
+
+.socials-logo {
+	fill: currentColor;
+}
+
+// footer
+
+.socials-list-footer {
+	display: flex;
+	gap: 10px;
+}
+
+.socials-link-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
+	background-color: var(--secondary-bg-icon-color);
+	color: var(--primary-white-color);
+	transition: color 250ms var(--timing-hover-focus), background-color 250ms var(--timing-hover-focus);
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color);
+		color: var(--primary-white-color);
+	}
+}

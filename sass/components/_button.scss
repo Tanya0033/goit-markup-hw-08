@@ -1,0 +1,72 @@
+.hero .primary-button {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	color: var(--primary-white-color);
+	background-color: var(--accent-color);
+	cursor: pointer;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	padding: 10px 32px;
+	min-width: 216px;
+	border: none;
+	transition: color 250ms var(--timing-hover-focus);
+
+	&:hover,
+	&:focus {
+		color: var(--primary-white-color);
+		background-color: var(--background-color-hover-focus);
+	}
+}
+
+.footer-btn {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	color: var(--primary-white-color);
+	background-color: var(--accent-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 50px;
+	margin-left: 12px;
+	cursor: pointer;
+	transition: background-color 250ms var(--timing-hover-focus);
+
+	&:focus,
+	&:hover {
+		background-color: var(--background-color-hover-focus);
+	}
+}
+
+.filter .button {
+	font-family: Roboto, sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.63;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
+	background-color: var(--background-color-button-portfolio);
+	border-radius: 4px;
+	border: none;
+	padding: 6px 22px;
+	transition: color 250ms var(--timing-hover-focus), background-color 250ms var(--timing-hover-focus),
+		box-shadow 250ms var(--timing-hover-focus);
+	cursor: pointer;
+	transition: color 250ms var(--timing-hover-focus);
+
+	&:hover,
+	&:focus {
+		color: var(--primary-white-color);
+		background-color: var(--background-color-hover-focus);
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	}
+}

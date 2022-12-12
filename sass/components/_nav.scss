@@ -1,0 +1,40 @@
+.nav-link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.33;
+	letter-spacing: 0.02em;
+	color: var(--title-text-color);
+	text-decoration: none;
+	transition: color 250ms var(--timing-hover-focus);
+	padding: 32px 0;
+	position: relative;
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+
+	&.current::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 4px;
+		border-radius: 2px;
+		background-color: var(--accent-color);
+		position: absolute;
+		left: 0;
+		bottom: -2px;
+	}
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+
+	& .nav-link.current {
+		color: var(--accent-color);
+	}
+}
+.nav-item {
+	list-style-type: none;
+}

@@ -1,0 +1,25 @@
+.clients .list {
+	display: flex;
+	gap: 30px;
+}
+
+.logo-client {
+	fill: currentColor;
+}
+
+.logo-link {
+	display: flex;
+	border: 1px solid currentColor;
+	border-radius: 4px;
+	color: var(--main-icon-color);
+	width: 170px;
+	height: 92px;
+	justify-content: center;
+	align-items: center;
+	transition: color 250ms var(--timing-hover-focus);
+	&:focus,
+	&:hover {
+		border-color: var(--accent-color);
+		color: var(--accent-color);
+	}
+}

@@ -1,0 +1,16 @@
+.advantages {
+	display: flex;
+	gap: 30px;
+}
+
+.advantages__item {
+	display: block;
+	list-style-type: none;
+}
+
+.advantages__icon-container {
+	padding: 25px 100px;
+	margin-bottom: 30px;
+	background-color: #f5f4fa;
+	border-radius: 4px;
+}

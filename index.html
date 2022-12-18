@@ -160,7 +160,22 @@
 					<h2 class="section__title">Наша команда</h2>
 					<ul class="list-team list">
 						<li class="list-item">
-							<img class="photo" src="./images/product_designer.jpg" alt="Дизайнер" width="270" height="260" />
+							<img
+								class="photo"
+								srcset="
+									./images/index/desktop-img-1.jpg    270w,
+									./images/index/desktop-img-1@2x.jpg 900w,
+									./images/index/tablet-img-1.jpg     354w,
+									./images/index/tablet-img-1@2x.jpg  708w,
+									./images/index/mobile-img-1.jpg     450w,
+									./image/index/mobile-img-1@2x.jpg   540w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+								src="./images/product_designer.jpg"
+								alt="Дизайнер"
+								width="450"
+								height="460"
+							/>
 
 							<!-- <picture>
                 <source
@@ -232,7 +247,22 @@
 						</li>
 
 						<li class="list-item list">
-							<img class="photo" src="./images/frontend(2).jpg" alt="Фронтенд-розробник" width="270" height="260" />
+							<img
+								class="photo"
+								srcset="
+									./images/index/desktop-img-2.jpg    270w,
+									./images/index/desktop-img-2@2x.jpg 900w,
+									./images/index/tablet-img-2.jpg     354w,
+									./images/index/tablet-img-2@2x.jpg  708w,
+									./images/index/mobile-img-2.jpg     450w,
+									./image/index/mobile-img-2@2x.jpg   540w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+								src="./images/frontend(2).jpg"
+								alt="Фронтенд-розробник"
+								width="450"
+								height="460"
+							/>
 							<div class="text-under-photo"
 								><h3 class="name">Ольга Рєпіна</h3> <p lang="en" class="proffesion">Frontend Developer</p
 								><ul class="socials-list list">
@@ -268,7 +298,22 @@
 						</li>
 
 						<li class="list-item">
-							<img class="photo" src="./images/marketing(3).jpg" alt="Макетинг" width="270" height="260" />
+							<img
+								class="photo"
+								srcset="
+									./images/index/desktop-img-3.jpg    270w,
+									./images/index/desktop-img-3@2x.jpg 900w,
+									./images/index/tablet-img-3.jpg     354w,
+									./images/index/tablet-img-3@2x.jpg  708w,
+									./images/index/mobile-img-3.jpg     450w,
+									./image/index/mobile-img-3@2x.jpg   540w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+								src="./images/marketing(3).jpg"
+								alt="Маркетолог"
+								width="450"
+								height="460"
+							/>
 							<div class="text-under-photo"
 								><h3 class="name">Микола Тарасов</h3> <p lang="en" class="proffesion">Marketing</p
 								><ul class="socials-list list">
@@ -304,7 +349,22 @@
 						</li>
 
 						<li class="list-item">
-							<img class="photo" src="./images/ui_designer(4).jpg" alt="Дизайнер" width="270" height="260" />
+							<img
+								class="photo"
+								srcset="
+									./images/index/desktop-img-4.jpg    270w,
+									./images/index/desktop-img-4@2x.jpg 900w,
+									./images/index/tablet-img-4.jpg     354w,
+									./images/index/tablet-img-4@2x.jpg  708w,
+									./images/index/mobile-img-4.jpg     450w,
+									./image/index/mobile-img-4@2x.jpg   540w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+								src="./images/ui_designer(4).jpg"
+								alt="Дизайнер"
+								width="450"
+								height="460"
+							/>
 							<div class="text-under-photo"
 								><h3 class="name">Михайло Єрмаков</h3><p lang="en" class="proffesion">UI Designer</p>
 								<ul class="socials-list list">
@@ -553,16 +613,26 @@
 			</button>
 
 			<ul class="mobile-menu">
-				<li><a href="" class="link">About</a></li>
-				<li><a href="" class="link">Products</a></li>
-				<li><a href="" class="link">Contacts</a></li>
-				<li><a href="" class="link">Career</a></li>
+				<li class="mobile__item"><a href="" class="mobile__link link current">Студія</a></li>
+				<li class="mobile__item"><a href="" class="mobile__link link">Портфоліо</a></li>
+				<li class="mobile__item"><a href="" class="mobile__link link">Контакти</a></li>
 			</ul>
+
+			<ul class="contacts-menu">
+				<li class="tel-menu">
+					<a href="tel:+380961111111" target="_blank" class="tel-menu-link link">+38 096 111 11 11</a>
+				</li>
+
+				<li class="mail-menu">
+					<a href="mailto:info@devstudio.com" target="_blank" class="mail-menu-link link">info@devstudio.com</a>
+				</li>
+			</ul>
+
 			<ul class="contact-menu">
-				<li class="contact-item"><a href="" class="link">About</a></li>
-				<li class="contact-item"><a href="" class="link">Products</a></li>
-				<li class="contact-item"><a href="" class="link">Contacts</a></li>
-				<li class="contact-item"><a href="" class="link">Career</a></li>
+				<li class="contact-item"><a href="" class="contact-link link">Instagram</a></li>
+				<li class="contact-item"><a href="" class="contact-link link">Twitter</a></li>
+				<li class="contact-item"><a href="" class="contact-link link">Facebook</a></li>
+				<li class="contact-item"><a href="" class="contact-link link">LinkedIn</a></li>
 			</ul>
 		</div>
 		<script src="./modal.js"></script>

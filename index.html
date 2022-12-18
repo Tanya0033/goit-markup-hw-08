@@ -27,26 +27,35 @@
 	<body>
 		<!------------------------------ HEADER ------------------->
 		<header>
-			<div class="header-container container">
+			<div class="container">
+				<a class="logo" lang="en" href="./index.html">Web<span class="logo-black">Studio</span> </a>
+				<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http:www.w3.org/2000/svg">
+						<path
+							fill-rule="evenodd"
+							d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+							clip-rule="evenodd"
+						></path>
+					</svg>
+				</button>
 				<nav class="header-container">
-					<a class="logo" lang="en" href="./index.html">Web<span class="logo-black">Studio</span> </a>
 					<ul class="nav-list">
 						<li class="nav-item"><a class="nav-link current" href="./index.html">Студія</a></li>
 						<li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
 						<li class="nav-item"><a class="nav-link" href="./index.html">Контакти</a></li>
 					</ul>
 				</nav>
-				<ul class="header">
-					<li class="header-mail">
-						<a href="mailto:info@devstudio.com" target="_blank" class="header-mail-link"
-							><svg class="header-icon" width="16" height="12">
+				<ul class="contacts">
+					<li class="contacts-mail">
+						<a href="mailto:info@devstudio.com" target="_blank" class="contacts-mail-link"
+							><svg class="contacts-icon" width="16" height="12">
 								<use href="./images/symbol-defs.svg#envelope"></use></svg
 							>info@devstudio.com
 						</a>
 					</li>
-					<li class="header-tel">
-						<a href="tel:+380961111111" target="_blank" class="header-tel-link"
-							><svg class="header-smartphone" width="10" height="16">
+					<li class="contacts-tel">
+						<a href="tel:+380961111111" target="_blank" class="contacts-tel-link"
+							><svg class="contacts-smartphone" width="10" height="16">
 								<use href="./images/symbol-defs.svg#smartphone"></use></svg
 							>+38 096 111 11 11
 						</a>
@@ -74,9 +83,9 @@
 								</svg>
 							</div>
 							<h3 class="advantages__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-							<p class="advantages__text--description"
-								>Ідейні міркування, авіть початок повсякденної роботи з формування позиції.</p
-							>
+							<p class="advantages__text--description">
+								Ідейні міркування, авіть початок повсякденної роботи з формування позиції.
+							</p>
 						</li>
 
 						<li class="advantages__item">
@@ -86,9 +95,9 @@
 								</svg>
 							</div>
 							<h3 class="advantages__title">ПУНКТУАЛЬНІСТЬ</h3>
-							<p class="advantages__text--description"
-								>Завдання організації, особливо рамки місце навчання кадрів тягне у себе.</p
-							>
+							<p class="advantages__text--description">
+								Завдання організації, особливо рамки місце навчання кадрів тягне у себе.
+							</p>
 						</li>
 
 						<li class="advantages__item">
@@ -98,9 +107,9 @@
 								</svg>
 							</div>
 							<h3 class="advantages__title">ПЛАНУВАННЯ</h3>
-							<p class="advantages__text--description"
-								>Так само консультація з широким активом значною мірою зумовлює.</p
-							>
+							<p class="advantages__text--description">
+								Так само консультація з широким активом значною мірою зумовлює.
+							</p>
 						</li>
 
 						<li class="advantages__item">
@@ -110,9 +119,9 @@
 								</svg>
 							</div>
 							<h3 class="advantages__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-							<p class="advantages__text--description"
-								>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p
-							>
+							<p class="advantages__text--description">
+								Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+							</p>
 						</li>
 					</ul>
 				</div>
@@ -120,7 +129,7 @@
 			<!---------------------------------WORK------------------------>
 			<section class="work section">
 				<div class="container">
-					<h2 class="work__title">Чим ми займаємося</h2>
+					<h2 class="section__title">Чим ми займаємося</h2>
 					<ul class="work__list work__images list">
 						<li>
 							<div class="work__thumb">
@@ -129,8 +138,8 @@
 							</div>
 						</li>
 
-						<li
-							><div class="work__thumb">
+						<li>
+							<div class="work__thumb">
 								<img src="./images/img2.jpg" alt="Розробка додатків" width="370" height="294" />
 								<p class="work__examples">Мобільні додатки</p>
 							</div>
@@ -148,10 +157,44 @@
 			<!----------------------------TEAM-------------->
 			<section class="team section">
 				<div class="container">
-					<h2 class="title">Наша команда</h2>
+					<h2 class="section__title">Наша команда</h2>
 					<ul class="list-team list">
 						<li class="list-item">
 							<img class="photo" src="./images/product_designer.jpg" alt="Дизайнер" width="270" height="260" />
+
+							<!-- <picture>
+                <source
+                  srcset="./image/index/desktop-img-1.jpg 1x, ./image/index/desktop-img-1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./image/index/tablet-img-1.jpg 1x, ./image/index/tablet-img-1@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./image/index/mobile-img-1.jpg 1x, ./image/index/mobile-img-1@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+
+                <img src="./image/index/mobile-img-1.jpg" class="team-img" alt="Игорь Демьяненко" />
+              </picture> -->
+
+							<!-- <img
+                srcset="
+                  ./images/team/team_mb@1x.jpg 450w,
+                  ./images/team/team_mb@2x.jpg 900w,
+                  ./images/team/team_tb@1x.jpg 354w,
+                  ./images/team/team_tb@2x.jpg 708w,
+                  ./images/team/team_dt@1x.jpg 270w,
+                  ./images/team/team_dt@2x.jpg 540w
+                "
+                src="./images/team/team_mb@1x.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
+                alt="фото І.Дем'яненеко"
+              /> -->
 							<div class="text-under-photo"
 								><h3 class="name">Ігор Дем'яненко</h3>
 								<p lang="en" class="proffesion">Product Designer</p>
@@ -302,7 +345,7 @@
 			<!--------------------CLIENTS------------------->
 			<section class="clients section">
 				<div class="container">
-					<h2 class="title">Постійні клієнти</h2>
+					<h2 class="section__title">Постійні клієнти</h2>
 					<ul class="clients list">
 						<li>
 							<a class="logo-link link" href="">
@@ -353,8 +396,8 @@
 		<!-------------------------------FOOTER---------------------------->
 		<footer class="footer">
 			<div class="summary container">
-				<div class="first-container"
-					><a class="logo-footer" href="./index.html" lang="en">Web<span class="logo-white">Studio</span> </a>
+				<div class="first-container">
+					<a class="logo-footer" href="./index.html" lang="en">Web<span class="logo-white">Studio</span> </a>
 					<address>
 						<ul class="address-list list">
 							<li class="address-list-item">
@@ -379,8 +422,8 @@
 					</address>
 				</div>
 
-				<div class="second-container"
-					><p class="join-title">ПРИЄДНУЙТЕСЬ</p>
+				<div class="second-container">
+					<p class="join-title">ПРИЄДНУЙТЕСЬ</p>
 					<ul class="socials-list-footer list">
 						<li class="socials-item-footer">
 							<a class="socials-link-footer" href="">
@@ -417,8 +460,8 @@
 					<p class="join-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
 					<form class="footer-form" action="">
 						<input class="footer-input" type="email" name="email" id="user-email" placeholder="E-mail" />
-						<button class="footer-btn" type="submit"
-							>Підписатися
+						<button class="footer-btn" type="submit">
+							Підписатися
 							<svg class="footer-icon" width="24" height="24" fill="none">
 								<path
 									fill="#fff"
@@ -498,30 +541,30 @@
 		</div>
 
 		<!-- ------------------------MENU CONTAINER------------------------->
-		<!-- <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
+		<div class="menu-container js-menu-container" id="mobile-menu">
+			<button class="menu-toggle js-close-menu">
+				<svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+					<path
+						fill-rule="evenodd"
+						d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+						clip-rule="evenodd"
+					></path>
+				</svg>
+			</button>
 
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
-    	</div> -->
+			<ul class="mobile-menu">
+				<li><a href="" class="link">About</a></li>
+				<li><a href="" class="link">Products</a></li>
+				<li><a href="" class="link">Contacts</a></li>
+				<li><a href="" class="link">Career</a></li>
+			</ul>
+			<ul class="contact-menu">
+				<li class="contact-item"><a href="" class="link">About</a></li>
+				<li class="contact-item"><a href="" class="link">Products</a></li>
+				<li class="contact-item"><a href="" class="link">Contacts</a></li>
+				<li class="contact-item"><a href="" class="link">Career</a></li>
+			</ul>
+		</div>
 		<script src="./modal.js"></script>
 		<script
 			defer

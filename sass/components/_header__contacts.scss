@@ -1,22 +1,32 @@
-.header {
+.contacts {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
 	display: flex;
 	list-style-type: none;
-	align-items: baseline;
+
 	margin-left: auto;
+	gap: 50px;
+
+	@media screen and (max-width: 1199px) {
+		flex-direction: column;
+		gap: 10px;
+	}
 }
-.header-icon,
-.header-smartphone {
+.contacts-icon,
+.contacts-smartphone {
 	fill: currentColor;
 }
-.header-mail-link,
-.header-tel-link {
+.contacts-mail-link,
+.contacts-tel-link {
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	padding: 32px 0;
+
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 1.33;
+	line-height: 1.14;
 	letter-spacing: 0.02em;
 	text-decoration: none;
 	color: var(--primary-text-color);
@@ -27,12 +37,7 @@
 	&:hover {
 		color: var(--accent-color);
 	}
-}
-
-.header-mail,
-.header-tel {
-	display: flex;
-}
-.header-tel {
-	margin-left: 50px;
+	@media screen and (min-width: 1200px) {
+		padding: 32px 0;
+	}
 }

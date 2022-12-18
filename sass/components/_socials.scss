@@ -32,6 +32,10 @@
 .socials-list-footer {
 	display: flex;
 	gap: 10px;
+
+	@media screen and (max-width: 1199px) {
+		justify-content: center;
+	}
 }
 
 .socials-link-footer {

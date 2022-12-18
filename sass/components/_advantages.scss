@@ -1,16 +1,30 @@
 .advantages {
-	display: flex;
-	gap: 30px;
-	padding: 0;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
 }
 
+@media screen and (max-width: 767px) {
+	.advantages__item:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}
 .advantages__item {
-	display: block;
-	list-style-type: none;
+	@media screen and (min-width: 768px) {
+		width: 354px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 270px;
+	}
 }
 
 .advantages__icon-container {
-	padding: 25px 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 120px;
 	margin-bottom: 30px;
 	background-color: #f5f4fa;
 	border-radius: 4px;

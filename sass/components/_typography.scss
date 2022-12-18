@@ -1,15 +1,26 @@
 // ---------HERO-----------//
 .hero__title {
 	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.36;
+
+	font-size: 26px;
+	line-height: 1.62;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--primary-white-color);
-	width: 696px;
+
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
+
+	@media screen and (max-width: 1199px) {
+		max-width: 360px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 44px;
+		line-height: 1.36;
+		width: 696px;
+	}
 }
 
 // -----ADVANTAGES---//
@@ -20,19 +31,16 @@
 	text-transform: uppercase;
 	color: var(--title-text-color);
 	margin-bottom: 10px;
+
+	@media screen and (max-width: 767px) {
+		text-align: center;
+	}
 }
 .advantages__text--description {
 	line-height: 1.71;
 	width: 270px;
 }
-.work__title {
-	margin-bottom: 50px;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.17;
-	text-align: center;
-	color: var(--title-text-color);
-}
+
 .work__examples {
 	font-weight: 700;
 	line-height: 1.14;
@@ -47,14 +55,19 @@
 	justify-content: center;
 	align-items: center;
 }
-.team .title,
-.work .title,
-.clients .title {
+.section__title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
 	color: var(--title-text-color);
+	margin-bottom: 50px;
+
+	@media screen and (max-width: 1199px) {
+		font-size: 28px;
+		line-height: 1.17;
+		margin-bottom: 30px;
+	}
 }
 .team .name {
 	font-weight: 500;
@@ -66,7 +79,6 @@
 }
 .text-under-photo {
 	padding: 30px 0;
-	border-radius: 0px 0px 4px 4px;
 }
 .list-item .proffesion {
 	font-size: 16px;
@@ -101,10 +113,10 @@
 	line-height: 1.14;
 	color: var(--primary-white-color);
 	margin-bottom: 20px;
-}
-.team .title,
-.clients .title {
-	margin-bottom: 50px;
+
+	@media screen and (max-width: 1199px) {
+		text-align: center;
+	}
 }
 
 // portfolio

@@ -1,30 +1,30 @@
-$breakpoints: (
-	"phone": 480px,
-	"tablet": 768px,
-	"desktop": 1200px,
-);
+// $breakpoints: (
+// 	"phone": 480px,
+// 	"tablet": 768px,
+// 	"desktop": 1200px,
+// );
 
 .container {
-	width: 1200px;
+	width: 100%;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-right: auto;
 	margin-left: auto;
-	outline: 2px solid red;
-	outline-offset: -2px;
+	// outline: 2px solid red;
+	// outline-offset: -2px;
 
 	// mobile
-	@media sreen and (min-width: 480px) {
+	@media screen and (min-width: 480px) {
 		width: 480px;
 	}
 
 	// tablet
-	@media sreen and (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 		width: 768px;
 	}
 
 	// desktop
-	@media sreen and (min-width: 1200px) {
+	@media screen and (min-width: 1200px) {
 		width: 1200px;
 	}
 }
@@ -34,15 +34,4 @@ $breakpoints: (
 	margin-bottom: 30px;
 	background-color: #f5f4fa;
 	border-radius: 4px;
-}
-.container.summary {
-	display: flex;
-	align-items: baseline;
-	justify-content: space-between;
-}
-.second-container {
-	margin-left: 70px;
-}
-.third-container {
-	margin-left: auto;
 }

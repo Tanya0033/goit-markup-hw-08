@@ -156,7 +156,6 @@ img {
 
 .advantages__text--description {
   line-height: 1.71;
-  width: 270px;
 }
 
 .work__examples {
@@ -499,8 +498,6 @@ img {
   transition: color 250ms var(--timing-hover-focus), background-color 250ms var(--timing-hover-focus), box-shadow 250ms var(--timing-hover-focus);
   transition: color 250ms var(--timing-hover-focus), background-color 250ms var(--timing-hover-focus), box-shadow 250ms var(--timing-hover-focus), -webkit-box-shadow 250ms var(--timing-hover-focus);
   cursor: pointer;
-  -webkit-transition: color 250ms var(--timing-hover-focus);
-  transition: color 250ms var(--timing-hover-focus);
 }
 .filter .button:hover, .filter .button:focus {
   color: var(--primary-white-color);
@@ -1424,7 +1421,6 @@ address {
 
 .mobile__link {
   display: block;
-  padding: 10px;
   text-decoration: none;
   font-family: "Roboto";
   font-weight: 500;
@@ -1442,7 +1438,7 @@ address {
 }
 
 .contacts-menu {
-  margin-top: 306px;
+  margin-top: auto;
   margin-bottom: 64px;
 }
 
@@ -1472,7 +1468,6 @@ address {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 10px;
-  padding-bottom: 48px;
 }
 
 .contact-item:not(:last-child) {

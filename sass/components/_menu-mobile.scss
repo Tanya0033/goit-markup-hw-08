@@ -86,7 +86,6 @@
 
 .mobile__link {
 	display: block;
-	padding: 10px;
 	text-decoration: none;
 	font-family: "Roboto";
 	font-weight: 500;
@@ -105,7 +104,7 @@
 }
 
 .contacts-menu {
-	margin-top: 306px;
+	margin-top: auto;
 	margin-bottom: 64px;
 }
 
@@ -132,7 +131,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	row-gap: 10px;
-	padding-bottom: 48px;
 }
 
 .contact-item:not(:last-child) {
